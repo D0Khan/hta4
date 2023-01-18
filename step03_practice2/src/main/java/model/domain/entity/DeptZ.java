@@ -33,7 +33,7 @@ public class DeptZ {
 	@OneToMany(mappedBy = "deptno")
 	private List<EmpZ> empZ = new ArrayList<EmpZ>();
 	
-	//문제 : 아래 생성자 파트를 주석 처리후 애노테이션을 사용해서 RunningTest의 오류를 해결 하시오.
+	//문제 : 아래 생성자 파트를 주석 처리후 애노테이션을 사용해서 RunningTest에 오류없이 진행되도록 만들어주세요~
 	public DeptZ(int deptno, String dname, String loc) {
 		this.deptno = deptno;
 		this.dname = dname;
