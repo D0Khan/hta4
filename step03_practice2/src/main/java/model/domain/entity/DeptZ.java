@@ -9,13 +9,10 @@ import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
 
@@ -37,7 +34,7 @@ public class DeptZ {
 	@OneToMany(mappedBy = "deptno")
 	private List<EmpZ> empZ = new ArrayList<EmpZ>();
 	
-	//¹®Á¦ : ¾Æ·¡ »ı¼ºÀÚ ÆÄÆ®¸¦ ÁÖ¼® Ã³¸®ÈÄ ¾Ö³ëÅ×ÀÌ¼ÇÀ» »ç¿ëÇØ¼­ RunningTestÀÇ ¿À·ù¸¦ ÇØ°á ÇÏ½Ã¿À.
+	//ë¬¸ì œ : ì•„ë˜ ìƒì„±ì íŒŒíŠ¸ë¥¼ ì£¼ì„ ì²˜ë¦¬í›„ ì• ë…¸í…Œì´ì…˜ì„ ì‚¬ìš©í•´ì„œ RunningTestì˜ ì˜¤ë¥˜ë¥¼ í•´ê²° í•˜ì‹œì˜¤.
 	public DeptZ(int deptno, String dname, String loc) {
 		this.deptno = deptno;
 		this.dname = dname;
