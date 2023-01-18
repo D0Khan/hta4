@@ -24,7 +24,6 @@ import lombok.ToString;
 
 public class DeptZ {
 	@Id
-	@NonNull
 	private int deptno;
 	
 	private String dname;
